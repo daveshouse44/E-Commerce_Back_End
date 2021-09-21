@@ -29,143 +29,41 @@ The following animation shows the application's POST, PUT, and DELETE routes for
 
 Your walkthrough video should also show the POST, PUT, and DELETE routes for products and tags being tested in Insomnia Core.
 
-## Getting Started:
+## Install:
 
-You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+* npm i
 
-Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
+* Use MySQL shell to use `schema.sql` to create database
 
-### Seed the Database:
+* Seed database with `npm run seed`
 
-After creating the models and routes, run `npm run seed` to seed data to your database so that you can test your routes.
+* npm start
 
-### Sync Sequelize to the Database on Server Start:
+* npm watch for nodemon
 
-Create the code needed in `server.js` to sync the Sequelize models to the MySQL database on server start.
 
-### Database Models:
+## Technical Requirements:
 
-Your database should contain the following four models, including the requirements listed for each model:
-
-* `Category`
-
-  * `id`
-
-    * Integer.
+  * [MySQL2](https://www.npmjs.com/package/mysql)
   
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
+  * [Sequelize](https://www.npmjs.com/package/sequelize)
 
-  * `category_name`
-  
-    * String.
-  
-    * Doesn't allow null values.
+  * [dotenv](https://www.npmjs.com/package/dotenv)
 
-* `Product`
-
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
-
-  * `product_name`
-  
-    * String.
-  
-    * Doesn't allow null values.
-
-  * `price`
-  
-    * Decimal.
-  
-    * Doesn't allow null values.
-  
-    * Validates that the value is a decimal.
-
-  * `stock`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set a default value of `10`.
-  
-    * Validates that the value is numeric.
-
-  * `category_id`
-  
-    * Integer.
-  
-    * References the `Category` model's `id`.
-
-* `Tag`
-
-  * `id`
-  
-    * Integer.
-  
-    * Doesn't allow null values.
-  
-    * Set as primary key.
-  
-    * Uses auto increment.
-
-  * `tag_name`
-  
-    * String.
-
-* `ProductTag`
-
-  * `id`
-
-    * Integer.
-
-    * Doesn't allow null values.
-
-    * Set as primary key.
-
-    * Uses auto increment.
-
-  * `product_id`
-
-    * Integer.
-
-    * References the `Product` model's `id`.
-
-  * `tag_id`
-
-    * Integer.
-
-    * References the `Tag` model's `id`.
+  * [express](https://www.npmjs.com/package/express)
 
 
-### Technical Requirements:
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Connects to a MySQL database using the [MySQL2](https://www.npmjs.com/package/mysql) and [Sequelize](https://www.npmjs.com/package/sequelize) packages.
-
-  * Stores sensitive data, like a user’s MySQL username, password, and database name, using environment variables through the [dotenv](https://www.npmjs.com/package/dotenv) package.
-
-
-### Contributions:
+## Contributions:
 
 David Tierney
 
-### Credits:
+
+## Credits:
 
 Trilogy Education Services
 
-### Questions:
+
+## Questions:
 
 [GitHub](https://github.com/daveshouse44)
 
