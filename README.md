@@ -1,11 +1,28 @@
 # E-Commerce Back End
 
-## Demo Video:
+## Table of Contents
 
-[Click here to check out a demonstration of this App's functionality]()
+-[User-Story](#user-story)
+
+-[Mock-Up](#mock-up)
+
+-[Install](#install)
+
+-[Technical-Requirements](#technical-requirements)
+
+-[Contributions](#contributions)
+
+-[Credits](#credits)
+
+-[Questions](#questions)
 
 
-## User Story:
+## Demo-Video:
+
+[Click here to check out a demo of this App!]()
+
+
+## User-Story:
 
 ```md
 AS A manager at an internet retail company
@@ -42,7 +59,7 @@ Your walkthrough video should also show the POST, PUT, and DELETE routes for pro
 * npm watch for nodemon
 
 
-## Technical Requirements:
+## Technical-Requirements:
 
   * [MySQL2](https://www.npmjs.com/package/mysql)
   
